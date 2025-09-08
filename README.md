@@ -16,6 +16,9 @@ In UserRepository, declare the following methods that help to find all user and 
 
 ```
 Your answer
+`data.sql` is located under `src/main/resources/`.
+
+It’s an auto-run SQL seed script. When the Spring Boot app (or tests) start with the in-memory H2 database, Spring executes `schema.sql` (if present) to create tables and then runs `data.sql` to insert dummy rows. This preloads sample users so repository queries and unit tests have data to work with.
 ```
 
 ## User Reservice - Complete the code
